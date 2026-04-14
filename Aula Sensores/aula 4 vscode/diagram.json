@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "author": "rafael yamada",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 15.8,
+      "left": 144,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": 35,
+      "left": -105.6,
+      "attrs": { "color": "green", "xray": "1" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "btn1:1.l", "esp:GND.2", "black", [ "h0" ] ],
+    [ "btn1:2.l", "esp:19", "green", [ "v48.2", "h-43.24" ] ],
+    [ "btn2:2.r", "esp:12", "green", [ "h9.8", "v77" ] ],
+    [ "esp:GND.1", "btn2:1.l", "black", [ "h-110.21" ] ]
+  ],
+  "dependencies": {}
+}
