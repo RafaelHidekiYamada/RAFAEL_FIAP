@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D00379C4-D38C-E292-4773-5592CDA800FC" name="DEPARTAMENTO">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-10 13:33:09 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<engineerTo>
+<item key="2FBDC950-7A29-BBEC-0ACF-45AF75D8C66F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_DEP" id="E8ECB460-946C-CFCB-1C32-E68B28BAE6B6">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-10 13:33:40 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<engineerTo>
+<item key="2FBDC950-7A29-BBEC-0ACF-45AF75D8C66F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOME_DEP" id="30687CD2-3085-0A58-D674-1958A9323221">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-10 13:34:09 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<engineerTo>
+<item key="2FBDC950-7A29-BBEC-0ACF-45AF75D8C66F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LOCAL_DEP" id="5F4733C2-D41E-E880-33A5-A1D36433030C">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-10 13:34:33 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<engineerTo>
+<item key="2FBDC950-7A29-BBEC-0ACF-45AF75D8C66F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6ACB49DA-9524-8256-60E6-E78C0E98F756" name="DEPARTAMENTO PK">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-10 13:35:07 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<engineerTo>
+<item key="2FBDC950-7A29-BBEC-0ACF-45AF75D8C66F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E8ECB460-946C-CFCB-1C32-E68B28BAE6B6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

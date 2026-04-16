@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="753F450B-9FD0-0167-6970-65859D321794" name="DEPARTAMENTO">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-10 13:47:29 UTC</createdTime>
+<generatorID>D00379C4-D38C-E292-4773-5592CDA800FC</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DEP" id="42F86481-D72F-509E-8174-6B20231D4698">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-10 13:47:29 UTC</createdTime>
+<generatorID>E8ECB460-946C-CFCB-1C32-E68B28BAE6B6</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_DEP" id="3DC656FD-D731-9986-F8EB-A72048A61784">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-10 13:47:29 UTC</createdTime>
+<generatorID>30687CD2-3085-0A58-D674-1958A9323221</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCAL_DEP" id="7FD8DE75-7CCA-969B-B992-5BC7467DABBD">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-10 13:47:29 UTC</createdTime>
+<generatorID>5F4733C2-D41E-E880-33A5-A1D36433030C</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D5FF2F32-6D71-5DB7-6210-3594C97F4FEC" name="DEPARTAMENTO_PK">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-10 13:47:29 UTC</createdTime>
+<generatorID>6ACB49DA-9524-8256-60E6-E78C0E98F756</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42F86481-D72F-509E-8174-6B20231D4698"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
