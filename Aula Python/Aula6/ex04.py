@@ -1,3 +1,5 @@
+# Busca em arquivos
+
 conteudo = ""
 with open('arquivoex03.txt', 'r', encoding="UTF-8") as file:
     conteudo = file.read()

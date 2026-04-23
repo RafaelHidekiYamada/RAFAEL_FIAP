@@ -1,3 +1,5 @@
+# Concatenador de arquivos
+
 arquivo = ""
 meuarquivo = ""
 

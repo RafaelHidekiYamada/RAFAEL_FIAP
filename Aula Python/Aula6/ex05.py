@@ -1,3 +1,5 @@
+# Ordenador de Linhas
+
 conteudo = []
 with open('arquivoex03.txt', 'r', encoding="UTF-8") as file:
     while True:
@@ -11,4 +13,5 @@ with open('arquivoex03.txt', 'r', encoding="UTF-8") as file:
 conteudo.sort()
 
 with open('arquivoex05.txt', 'w', encoding="UTF-8") as file:
-    file.write(conteudo)
+    for line in conteudo:
+        file.write(line)
