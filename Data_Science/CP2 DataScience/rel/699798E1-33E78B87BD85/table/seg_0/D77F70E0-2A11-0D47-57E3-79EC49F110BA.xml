@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D77F70E0-2A11-0D47-57E3-79EC49F110BA" name="SORVETE">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>CBF8B523-A81B-13D8-8930-1092E3819EC4</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_sorvete" id="0DD7F02E-8998-7544-5E18-02FE4D23E645">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>E41C540F-C72D-0813-C9DC-B3D180C1690D</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome_sorvete" id="E833483A-5B37-FEB5-2F65-35642BF4DFDB">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>C5C89BC3-3132-4A98-5ACA-D52F43062C6C</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="preco_unitario" id="7096656B-B82D-BC86-E1FD-2F7548A1EED2">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>6CA8C127-246A-8DA5-1AE6-4E6C0087EE98</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CATEGORIA_cod_categoria" id="6C941E85-FD65-9E06-630B-9E1E57CB4FF5">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>F880E70E-1295-638C-5A1C-5FA086F1F3D5</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2817D0BA-D0B7-8F9E-56AB-B7754609BADD" referredColumn="D40B8A7F-C40F-F473-3004-7E787FCE1604"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F9ED4AE8-429D-C698-F000-E842816C2B56" name="SORVETE_PK">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>30AD706B-919E-D00E-C46C-49D2C63E888B</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0DD7F02E-8998-7544-5E18-02FE4D23E645"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B0338C7-8B23-B541-FCB3-F00EA64382DF" name="SORVETE_CATEGORIA_FK">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>1030AB56-4905-F931-C294-E22EEA5CE128</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C941E85-FD65-9E06-630B-9E1E57CB4FF5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

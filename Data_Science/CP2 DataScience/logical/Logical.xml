@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="3C83586F-C597-7452-CDB4-4754B33FB4AF" mainViewID="77FF85AE-E1DF-C84E-F571-FB271AF66CCF">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:09:19 UTC</createdTime>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

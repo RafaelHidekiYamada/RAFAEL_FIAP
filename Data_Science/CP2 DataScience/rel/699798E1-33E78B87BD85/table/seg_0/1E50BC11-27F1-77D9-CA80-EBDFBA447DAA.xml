@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E50BC11-27F1-77D9-CA80-EBDFBA447DAA" name="VENDA">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>F1286596-FD03-5B58-1332-D4DA26B2C95A</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="data_venda" id="1EA8A997-5C1C-AFE9-2F6E-85DA14066791">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>FD5D1A90-F7C0-906F-11F7-F6B01BA7381B</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantidade" id="35332D59-2837-09ED-EEF5-3324300A14A2">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>823F8FB0-AF38-9DE0-BCF4-CFADD6EFAAC0</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_unitario" id="03583265-3A09-C1B9-5A85-F3E36DE9359E">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>AD9064E0-C38C-AD63-1D17-DD7E59D104DF</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SORVETE_cod_sorvete" id="6009AA18-91E3-A88D-B0B2-EE2BCAAF92EC">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>0250B2A7-35E6-7C5D-6656-ED72ED4BAFBC</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0529E217-B44B-78E5-39F6-49A19D033F29" referredColumn="0DD7F02E-8998-7544-5E18-02FE4D23E645"/>
+</associations>
+</Column>
+<Column name="CLIENTE_cod_cliente" id="5D9677DA-4387-165A-E90E-64E6C267ED4B">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>B07EBDDB-F8EF-275C-0C82-C0D50F24B977</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D338D62E-CF40-2C4B-8F3E-45A670FEEF1D" referredColumn="0962853E-471D-BDC3-DD51-E1D29ABA652D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D0DCBD65-FBBD-C1BD-6225-B39B4649FCE9" name="VENDA_PK">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>43059712-699D-5D2B-6541-0E579914EA8B</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1EA8A997-5C1C-AFE9-2F6E-85DA14066791"/>
+<colUsage columnID="6009AA18-91E3-A88D-B0B2-EE2BCAAF92EC"/>
+<colUsage columnID="5D9677DA-4387-165A-E90E-64E6C267ED4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2639B9A2-0DF0-070D-7EEE-75EDBA8CB0E6" name="VENDA_CLIENTE_FK">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>71BF4914-C720-6120-C8F9-983FDDC07D0B</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D9677DA-4387-165A-E90E-64E6C267ED4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0468997E-AD95-1CD3-F5D6-FD8D0EF22F35" name="VENDA_SORVETE_FK">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>77CEAAE1-5338-88B3-B954-A3A5F295353E</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6009AA18-91E3-A88D-B0B2-EE2BCAAF92EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

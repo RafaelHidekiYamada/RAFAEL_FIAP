@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2817D0BA-D0B7-8F9E-56AB-B7754609BADD" containerWithKeyObject="D77F70E0-2A11-0D47-57E3-79EC49F110BA" localFKIndex="5B0338C7-8B23-B541-FCB3-F00EA64382DF" name="SORVETE_CATEGORIA_FK">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>1030AB56-4905-F931-C294-E22EEA5CE128</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<referredTableLongName>CATEGORIA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DA9FD59D-7C3F-A7A5-E2A4-82B78E9B9C8C</referredTableID>
+<keyObject>9C6E2B20-A3ED-529C-3D0A-EB9FA588484B</keyObject>
+<referredKeyID>9C6E2B20-A3ED-529C-3D0A-EB9FA588484B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cod_categoria</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

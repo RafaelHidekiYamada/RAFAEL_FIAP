@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="885809D6-34AF-EC00-8F8F-529576115338" name="SORVETE_INGREDIENTE">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>79A1CE5E-7D82-C805-78C4-6966AD82009B</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SORVETE_cod_sorvete" id="C7E159CC-C15C-6C24-B921-712F155E6316">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>86EC3000-6F5E-52BE-5FFF-9AA9D7131DAE</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FA1F861D-7950-47DD-687E-B2CD557FACD6" referredColumn="0DD7F02E-8998-7544-5E18-02FE4D23E645"/>
+</associations>
+</Column>
+<Column name="INGREDIENTE_cod_ingrediente" id="03C5B00D-F9FE-E8EA-19C3-2299E7710F91">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>E55CF583-7579-D792-DF9E-38717956D3C2</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="57ACE683-6A83-8BC4-67BE-5CA01F25D1B2" referredColumn="D05248B7-52BF-CBD3-4B9E-185E034F0823"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9E9138A9-FAAC-E60F-D18E-FF28B3C75AB3" name="SORVETE_INGREDIENTE_PK">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>E757CF18-70FA-7D0A-B0B0-3FBFE2A31C1C</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7E159CC-C15C-6C24-B921-712F155E6316"/>
+<colUsage columnID="03C5B00D-F9FE-E8EA-19C3-2299E7710F91"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A09B1B8D-4544-F84B-8231-E6D889670A98" name="SORVETE_INGREDIENTE_SORVETE_FK">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>1913789C-1CFA-BBB0-254B-14DCE70072D3</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7E159CC-C15C-6C24-B921-712F155E6316"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8AE3C40A-9283-4CD5-5BDA-9F80FF85F896" name="SORVETE_INGREDIENTE_INGREDIENTE_FK">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>9D705413-A560-7AD1-8998-C9471F8A2709</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03C5B00D-F9FE-E8EA-19C3-2299E7710F91"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

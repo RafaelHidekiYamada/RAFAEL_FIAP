@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="CP2 DataScience" id="0D1D8AB5-7D85-7698-BDD3-BFC8BC46B57A" version="3.5">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:09:18 UTC</createdTime>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>0D1D8AB5-7D85-7698-BDD3-BFC8BC46B57A</designId>
+</OSDM_Design>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="57ACE683-6A83-8BC4-67BE-5CA01F25D1B2" containerWithKeyObject="885809D6-34AF-EC00-8F8F-529576115338" localFKIndex="8AE3C40A-9283-4CD5-5BDA-9F80FF85F896" name="SORVETE_INGREDIENTE_INGREDIENTE_FK">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>9D705413-A560-7AD1-8998-C9471F8A2709</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<referredTableLongName>INGREDIENTE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>807ACE18-AD12-4A6D-7A95-ED292164E9CE</referredTableID>
+<keyObject>CB491208-3D20-8499-A38D-118FF672DA0B</keyObject>
+<referredKeyID>CB491208-3D20-8499-A38D-118FF672DA0B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cod_ingrediente</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

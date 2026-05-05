@@ -1,0 +1,101 @@
+NOME COMPLETO: RAFAEL HIDEKI YAMADA e LETHÍCIA DIAS PEREIRA
+RM: 571041 e 571431
+
+-- SEGUNDO CHECKPOINT - MODELAGEM RELACIONAL
+-- Cenario: Sorveteria Temos Sorvetes
+-- Banco: Oracle SQL Developer
+
+
+1) COMANDOS DDL - CRIACAO DAS TABELAS
+
+
+-- CLIENTE
+CREATE TABLE CLIENTE (
+    cod_cliente NUMBER PRIMARY KEY,
+    nome_cliente VARCHAR2(100),
+    endereco VARCHAR2(150),
+    telefone VARCHAR2(20),
+    status_cliente CHAR(1)
+);
+
+-- CATEGORIA
+CREATE TABLE CATEGORIA (
+    cod_categoria NUMBER PRIMARY KEY,
+    nome_categoria VARCHAR2(50)
+);
+
+-- SORVETE
+CREATE TABLE SORVETE (
+    cod_sorvete NUMBER PRIMARY KEY,
+    nome_sorvete VARCHAR2(100),
+    preco_unitario NUMBER(10,2),
+    cod_categoria NUMBER,
+    CONSTRAINT fk_categoria
+        FOREIGN KEY (cod_categoria)
+        REFERENCES CATEGORIA(cod_categoria)
+);
+
+-- INGREDIENTE
+CREATE TABLE INGREDIENTE (
+    cod_ingrediente NUMBER PRIMARY KEY,
+    nome_ingrediente VARCHAR2(80)
+);
+
+-- SORVETE_INGREDIENTE (tabela associativa)
+CREATE TABLE SORVETE_INGREDIENTE (
+    cod_sorvete NUMBER,
+    cod_ingrediente NUMBER,
+    PRIMARY KEY (cod_sorvete, cod_ingrediente),
+    CONSTRAINT fk_si_sorvete
+        FOREIGN KEY (cod_sorvete)
+        REFERENCES SORVETE(cod_sorvete),
+    CONSTRAINT fk_si_ingrediente
+        FOREIGN KEY (cod_ingrediente)
+        REFERENCES INGREDIENTE(cod_ingrediente)
+);
+
+-- VENDA
+CREATE TABLE VENDA (
+    cod_cliente NUMBER,
+    cod_sorvete NUMBER,
+    data_venda DATE,
+    quantidade NUMBER,
+    valor_unitario NUMBER(10,2),
+    PRIMARY KEY (cod_cliente, cod_sorvete, data_venda),
+    CONSTRAINT fk_venda_cliente
+        FOREIGN KEY (cod_cliente)
+        REFERENCES CLIENTE(cod_cliente),
+    CONSTRAINT fk_venda_sorvete
+        FOREIGN KEY (cod_sorvete)
+        REFERENCES SORVETE(cod_sorvete)
+);
+
+2) COMANDOS INSERT - POPULACAO DAS TABELAS
+Ordem correta respeitando a integridade referencial
+
+-- CLIENTE
+INSERT INTO CLIENTE VALUES (1, 'Joao Silva', 'Rua A', '11999999999', 'A');
+INSERT INTO CLIENTE VALUES (2, 'Maria Souza', 'Rua B', '11888888888', 'A');
+
+-- CATEGORIA
+INSERT INTO CATEGORIA VALUES (1, 'Frutas');
+INSERT INTO CATEGORIA VALUES (2, 'Gourmet');
+
+-- SORVETE
+INSERT INTO SORVETE VALUES (1, 'Morango', 10.00, 1);
+INSERT INTO SORVETE VALUES (2, 'Chocolate Belga', 15.00, 2);
+
+-- INGREDIENTE
+INSERT INTO INGREDIENTE VALUES (1, 'Leite');
+INSERT INTO INGREDIENTE VALUES (2, 'Acucar');
+
+-- SORVETE_INGREDIENTE
+INSERT INTO SORVETE_INGREDIENTE VALUES (1, 1);
+INSERT INTO SORVETE_INGREDIENTE VALUES (1, 2);
+INSERT INTO SORVETE_INGREDIENTE VALUES (2, 1);
+
+-- VENDA
+INSERT INTO VENDA VALUES (1, 1, DATE '2024-05-01', 2, 10.00);
+INSERT INTO VENDA VALUES (2, 2, DATE '2024-05-02', 1, 15.00);
+
+

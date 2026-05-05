@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F1286596-FD03-5B58-1332-D4DA26B2C95A" name="VENDA">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:37:03 UTC</createdTime>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<engineerTo>
+<item key="699798E1-2B9E-8D73-899A-33E78B87BD85" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="data_venda" id="FD5D1A90-F7C0-906F-11F7-F6B01BA7381B">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:37:25 UTC</createdTime>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<engineerTo>
+<item key="699798E1-2B9E-8D73-899A-33E78B87BD85" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="quantidade" id="823F8FB0-AF38-9DE0-BCF4-CFADD6EFAAC0">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:37:30 UTC</createdTime>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<engineerTo>
+<item key="699798E1-2B9E-8D73-899A-33E78B87BD85" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valor_unitario" id="AD9064E0-C38C-AD63-1D17-DD7E59D104DF">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:37:33 UTC</createdTime>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<engineerTo>
+<item key="699798E1-2B9E-8D73-899A-33E78B87BD85" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_sorvete" id="0250B2A7-35E6-7C5D-6656-ED72ED4BAFBC">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:44:55 UTC</createdTime>
+<generatorID>77CEAAE1-5338-88B3-B954-A3A5F295353E</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<engineerTo>
+<item key="699798E1-2B9E-8D73-899A-33E78B87BD85" value="true"/>
+</engineerTo>
+<referedAttribute>E41C540F-C72D-0813-C9DC-B3D180C1690D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_cliente" id="B07EBDDB-F8EF-275C-0C82-C0D50F24B977">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:45:00 UTC</createdTime>
+<generatorID>71BF4914-C720-6120-C8F9-983FDDC07D0B</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<engineerTo>
+<item key="699798E1-2B9E-8D73-899A-33E78B87BD85" value="true"/>
+</engineerTo>
+<referedAttribute>A48B210F-D926-4936-67A4-2F08A7CB4E7D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="43059712-699D-5D2B-6541-0E579914EA8B" name="VENDA PK">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:37:45 UTC</createdTime>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<engineerTo>
+<item key="699798E1-2B9E-8D73-899A-33E78B87BD85" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FD5D1A90-F7C0-906F-11F7-F6B01BA7381B</attributeRef>
+<attributeRef>0250B2A7-35E6-7C5D-6656-ED72ED4BAFBC</attributeRef>
+<attributeRef>B07EBDDB-F8EF-275C-0C82-C0D50F24B977</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

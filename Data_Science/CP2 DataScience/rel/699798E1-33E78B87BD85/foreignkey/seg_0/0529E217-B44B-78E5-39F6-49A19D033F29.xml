@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0529E217-B44B-78E5-39F6-49A19D033F29" containerWithKeyObject="1E50BC11-27F1-77D9-CA80-EBDFBA447DAA" localFKIndex="0468997E-AD95-1CD3-F5D6-FD8D0EF22F35" name="VENDA_SORVETE_FK">
+<createdBy>rafae</createdBy>
+<createdTime>2026-04-24 13:46:54 UTC</createdTime>
+<generatorID>77CEAAE1-5338-88B3-B954-A3A5F295353E</generatorID>
+<ownerDesignName>CP2 DataScience</ownerDesignName>
+<referredTableLongName>SORVETE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D77F70E0-2A11-0D47-57E3-79EC49F110BA</referredTableID>
+<keyObject>F9ED4AE8-429D-C698-F000-E842816C2B56</keyObject>
+<referredKeyID>F9ED4AE8-429D-C698-F000-E842816C2B56</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cod_sorvete</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
